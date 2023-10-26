@@ -1,0 +1,40 @@
+body {
+    background-color: mediumpurple;    
+}
+
+.square {
+    background-color: white;
+    border-radius: 50%;
+    height: 4rem;
+    opacity: .6;
+    width: 4rem;
+
+    /* animation-name: move;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(10); */
+    animation: move 5s forwards alternate infinite, blink 500ms infinite;
+}
+
+.square:hover {
+    animation-play-state: paused;
+}
+
+@keyframes move {
+    100% {
+      transform: translateX(calc(100vw - 100% - 16px));
+    }
+}
+
+@keyframes blink {
+    0%, 100% {
+      opacity: 0.6;
+    }
+  
+    50% {
+      opacity: 1;
+    }
+}
+

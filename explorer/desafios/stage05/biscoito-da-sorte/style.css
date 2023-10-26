@@ -1,0 +1,53 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-smoothing: grayscale;
+}
+
+:root {
+  font-size: 62.5%;
+  --cookiePhrases: 'Dancing Script', cursive;
+  --geralFont: 'DM Sans', sans-serif;
+  --titleFont: 'Montserrat', sans-serif;
+  --colorBtn: #FF9500;
+  --colorFont: #34355B;
+  --colorBGPhrases: #E4EDF1;
+}
+
+.hide {
+  display: none;
+}
+
+body {
+  font-size: 1.6rem;
+  background: linear-gradient(45deg, #190361 0%, #B0F 100%);
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+main {
+  border-radius: .5rem;
+  background: #FFFFFF;
+  box-shadow: 0 2.0rem 5.0rem 0 rgba(0, 0, 0, 0.80);
+  padding: 4.8rem  6.4rem 6.4rem 6.4rem;
+  width: min(42.8rem, 90%);
+  margin-top: -12rem;
+  text-align: center;
+  color: var(--colorFont);
+}
+
+h1 {
+  font-size: 2.4rem;
+  font-family: var(--titleFont);
+  margin-bottom: 1.4rem;;
+}
+
+p {
+  font-size: 1.5rem;
+  font-family: var(--geralFont);
+  margin-bottom: 2.6rem;
+}
+

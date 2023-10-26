@@ -1,0 +1,122 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-smoothing: grayscale;
+}
+
+:root {
+  font-size: 62.5%;
+  --bg-page: #0F0D13;
+  --bg-card: #2A2141;
+  --font-primary: 'Roboto', sans-serif;
+  --color-text: #E1E1E6; 
+}
+
+body {
+  background: var(--bg-page);
+  font-family: var(--font-primary);
+  color: var(--color-text);
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+p {
+  opacity: 0.67;
+  font-size: 19px;
+}
+
+.grid {
+  margin: 66px auto;
+  align-content: center;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: 266px 358px;
+  grid-template-rows:   266px 199px;
+  gap: 32px;
+  grid-template-areas: 
+  "card1 card2" 
+  "card1 card3";
+}
+
+.card1 {
+  grid-area: card1;
+  background: var(--bg-card);
+  display: flex;
+  flex-direction: column;
+  padding: 38px;
+  border-radius: 9px;
+}
+
+#album1 {
+  width: 189px;
+  width: 189px;
+  margin-bottom: 28px;
+}
+
+.card1 h1, .card2 h1, .card3 h1 {
+  margin-bottom: 9px;
+}
+
+.card1 p {
+  margin-bottom: 28px;
+}
+
+.player {
+  display: flex;
+  align-items: center;
+  margin-bottom: 28px;
+  justify-content: center;
+}
+
+#player {
+  padding: 0 50px;  
+}
+
+.timer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 9px;
+}
+
+.card2 {
+  grid-area: card2;
+  background: var(--bg-card); 
+  padding: 29px;
+  border-radius: 9px;
+}
+
+.album2{
+  width: 84px;
+  height: 84px;
+}
+
+.card2-wrapper {
+  display: flex;
+  gap: 29px;
+  margin-bottom: 29px;
+}
+
+.album-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#group {
+  margin-bottom: 9px;
+}
+
+.card3 {
+  grid-area: card3;
+  background: var(--bg-card); 
+  border-radius: 9px; 
+  padding: 29px; 
+}
+
+

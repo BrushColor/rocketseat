@@ -1,0 +1,81 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-smoothing: grayscale;
+}
+
+:root {
+  font-size: 62.5%;
+  --primary-font: 'Inter', sans-serif;
+  --second-font: 'Roboto', sans-serif;
+  --bg-page: #0B0911;  
+  --bg-wrapper: #1C162C;
+  --color-text: #FFFFFF;
+  --bg-btn-primary: #8257E5;;
+}
+body {
+  background: var(--bg-page);  
+  color: var(--color-text);
+  font-size: 1.6rem;
+  font-family: var(--second-font);
+}
+
+/* .grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);  
+  grid-template-rows: repeat(6, 1fr);      
+  grid-template-areas: 
+  "name-btn name-btn name-btn name-btn name-btn"
+  "type-btn btn-primary btn-secondary"
+  "type-btn btn-primary btn-secondary"
+  "type-btn btn-primary btn-secondary"
+  "type-btn btn-primary btn-secondary"
+  "type-btn btn-primary btn-secondary"
+  "type-btn btn-primary btn-secondary";
+} */
+
+.btn-primary, .btn-secondary, .btn-tertiary {
+  align-items: center;
+  font-family: var(--primary-font);
+  font-size: 1.1rem;  
+}
+
+/* .type-btn {
+  grid-area: type-btn;
+  background: var(--bg-wrapper);  
+} */
+
+/* .name-btn {
+  background: var(--bg-wrapper);
+  grid-area: name-btn;
+  display: flex;
+  padding: 1.0rem;
+  width: 86.5rem;
+  height: 6.4rem;
+  gap: 1.0rem;
+  text-transform: uppercase;
+} */
+
+.btn-primary {
+  display: flex;
+  flex-direction: column;
+  width: 23.0rem;
+  padding: 1.0rem;
+  gap: 1.0rem;
+}
+
+.btn-primary button {
+  padding: 1.2rem 2.4rem;
+  border-radius: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--bg-btn-primary);
+}
+
+/* footer {
+  text-align: center;
+} */
+

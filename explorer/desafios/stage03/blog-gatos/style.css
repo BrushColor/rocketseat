@@ -1,0 +1,242 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    -moz-osx-smoothing: grayscale;
+    -webkit-smoothing: antialiased,
+}
+
+:root{
+    font-size: 62.5%;
+    --hue: 200;
+    --cor1: hsl(var(--hue), 70%, 35%);
+    --cor2: hsl(var(--hue), 91%, 25%);
+    --cor3: hsl(var(--hue), 0%, 100%);
+    --cor4: hsl(var(--hue), 100%, 98%);
+    --cor5: hsl(var(--hue), 60%, 20%);
+}
+
+body {
+    font-family: 'Mulish', sans-serif;
+    font-size: 1.6rem;
+}
+
+header {
+    align-items: center;
+    background: var(--cor2);
+    display: flex;
+    justify-content: center;
+    padding: 1.2rem 2.8rem;
+}
+
+.logo {
+    border-radius: 50%;
+    background-color : var(--cor4);
+    height: 4rem;
+    padding: .8rem;    
+    width: 4rem;
+}
+
+.input-wrapper {
+    margin: 0 2.8rem ;
+}
+
+.input-wrapper label {
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    position: absolute;  
+}
+
+.input-wrapper  input {
+    padding: 1.6rem;
+    background-color: var(--cor1);
+    border: 0;
+    border-radius: .6rem;
+    font-size: 1.6rem;
+    color: var(--cor3);
+}
+
+.input-wrapper input:focus {
+    outline: solid  1px var(--cor3);
+    opacity: .8;
+}
+
+.input-wrapper input::placeholder {
+    color: var(--cor3);
+    opacity: .4;
+    text-align: center;
+}
+
+.avatar {
+    border-radius: 50%;
+    height: 4.2rem;
+    width: 4.2rem;    
+}
+
+.first img { 
+    width: 100%;
+}
+
+h1, h2, p {
+    color: var(--cor5);
+}
+#section1  h1 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 3.8rem;
+    text-align: center;
+}
+
+p {
+    line-height: 2.5rem;    
+}
+
+.title  {
+    padding-bottom: 3.1rem;
+}
+
+.button {
+    display: flex;
+    flex-direction: row;
+    gap: 1.0rem;
+    padding: .8rem 0 0 2.2rem;
+}
+
+.button img {
+    border-radius: 50%;
+    background-color : var(--cor2);
+    height: 4rem;
+    padding: 1.2rem;    
+    width: 4rem;
+}
+
+#section1 p {
+    padding: 0 2.3rem;
+}
+
+#section2 h1{
+    padding: 3.3rem 0 0 2.2rem ;
+}
+
+.articles img {
+    border-radius: 5px;
+    width: 15.1rem;
+    height: 8.4rem; 
+    margin: 3.2rem 1.6rem 3.2rem 2.2rem; 
+    object-fit: fill; 
+}
+
+.articles {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+
+.details {
+    margin: 3.2rem 2.6rem 3.2rem 0;    
+}
+
+h2 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 2.8rem;    
+}
+
+.details p {
+    width: 21.7rem;
+    font-size: 1.4rem;
+    line-height: 2.2rem;  
+}
+
+footer {
+    align-items: center;
+    display: flex;
+    height: 6.4rem;
+    padding: 1.6rem;
+    background: var(--cor2);
+    justify-content: center;
+}
+
+footer p {
+    color: var(--cor3);
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+
+    .structure {
+        display: grid;
+        grid-template-areas:
+        "header header header"
+        "main main sidebar"
+        "main main sidebar"
+        "footer footer footer";
+    }
+
+    .header {
+        grid-area: header; 
+    }
+
+    main {
+        flex-direction: row;
+        gap: 16rem;
+    }
+
+    .main {
+        grid-area: main;
+        margin: 4.4rem 3.4rem  3.9rem 11.0rem;
+    }
+
+    .main img {
+        border-radius: .5rem;
+    }
+
+    #section1 p {
+        padding: 0;
+    }
+
+    .title {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 3.2rem;
+        align-items: center;
+    }
+
+    .title .button img {
+        border-radius: 50%;
+    }
+
+    .title .button img:hover {
+        filter: hue-rotate(7deg) contrast(300%) saturate(200%);
+        transform: scale(1.1);  
+    }
+
+    .button {
+        padding: 0;
+    }
+
+    .sidebar {
+        grid-area: sidebar;
+        padding: 1.1rem 11.0rem 29.5rem 0;
+    }
+
+    #section2 {
+        animation: appear .4s var(--delay) backwards;
+    }
+
+    #section2 img {
+        aspect-ratio: 16/9;
+        transition: all 200ms ease-out;
+    }
+
+    #section2 img:hover {
+        filter: hue-rotate(7deg) contrast(101%) saturate(200%);
+        transform: scale(1.1);
+    }
+
+    .footer {
+        grid-area: footer; 
+    }
+}

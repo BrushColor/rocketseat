@@ -1,0 +1,24 @@
+* {
+  box-sizing: border-box;  
+  margin: 0px;
+}
+
+.grid{
+    display: grid;
+
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 8px;
+
+    align-content: start;
+    align-content: center;
+
+    
+    height: 100vh;
+    width: 100vw;
+    background-color: #4d4d4d;
+}
+
+.grid > div {
+    background-color: #7fffd4;
+}
