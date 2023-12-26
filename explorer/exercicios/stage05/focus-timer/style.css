@@ -4,7 +4,6 @@
   box-sizing: border-box;
 }
 
-
 :root {
   --hue: 194;
   --bg-color: hsl(var(--hue), 5%, 7%);
@@ -15,7 +14,6 @@
 
   font-size: clamp(40%, 1% + 2vw, 62.5%);
 }
-
 
 html.light {
   --text-color: hsl(var(--hue), 5%, 7%);

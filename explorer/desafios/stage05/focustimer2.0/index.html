@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta name="description" content="Temporizador estilo pomodoro">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="assets/favicon.svg" type="image/x-svg">
+    <title>Focus timer 2.0</title>
+
+    <script src="src/main.js" type="module" defer></script>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  </head>
+  <body  id="buttonTheme" class="default">
+    <div id="app">
+      <div id="clock" class="flex">
+        <section id="timer" class="flex">
+          <span id="minutes">25</span>
+          <span>:</span> 
+          <span id="seconds">00</span>
+        </section>
+        <section id="controls" class="flex">
+          <button
+            data-action="toggleRunning"
+            class="ph ph-play-circle">
+            <span class="sr-only">Iniciar contador</span>  
+          </button>
+          <button
+            data-action="toggleRunning"
+            class="ph ph-stop-circle">
+            <span class="sr-only">Parar contador</span>
+          </button>
+          <button
+            data-action="toggleRunning"
+            class="ph ph-plus-circle">
+            <span class="sr-only">Aumentar tempo do contador</span>
+          </button>
+          <button
+            data-action="toggleRunning"
+            class="ph ph-minus-circle">
+            <span class="sr-only">Diminuir tempo do contador</span>
+          </button>
+        </section>
+      </div>
+        <section id="theme" class="flex">
+          <button 
+            id="forest"
+            class="ph ph-tree-evergreen">
+            <span class="sr-only">Floresta</span>
+          </button>
+          <button 
+            id="rain" 
+            class="ph ph-cloud-rain">
+            <span class="sr-only">Chuva</span>
+          </button>
+          <button 
+            id="coffee-shop" 
+            class="ph ph-storefront">
+            <span class="sr-only">Cafeteria</span>
+          </button>
+          <button 
+            id="fireplace" 
+            class="ph ph-flame">
+            <span class="sr-only">Lareira</span>
+          </button>
+          <audio id="audioCoffeeShop" src="assets/Cafeteria.wav" loop></audio>
+          <audio id="audioRain" src="assets/Chuva.wav" loop></audio>
+          <audio id="audioForest" src="assets/Floresta.wav" loop></audio>
+          <audio id="audioFireplace" src="assets/Lareira.wav" loop></audio>
+        </section> 
+      </div>  
+  </body>
+</html>
